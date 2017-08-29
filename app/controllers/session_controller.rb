@@ -22,6 +22,7 @@ class SessionController < ApplicationController
     else
       # Nope, something went wrong
       redirect_to login_path
+      flash.alert = "Invalid email and/or password."
     end
   end
 
