@@ -19,6 +19,6 @@ class ApplicationController < ActionController::Base
   end
 
   def index
-    @posts = Posts.all
+    @books = Books.all
   end
 end
